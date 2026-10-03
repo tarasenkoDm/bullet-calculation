@@ -1,0 +1,214 @@
+.container {
+  position: relative;
+
+  input {
+    width: 50px
+  }
+
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    margin-left: 12px;
+    width: 754px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  // =========================
+  // Bullet
+  // =========================
+  #bullet1 {
+    position: absolute;
+    top: 100px;
+    left: 185px;
+  }
+
+  #bullet2 {
+    position: absolute;
+    bottom: 265px;
+    left: 545px;
+  }
+
+  #bullet3 {
+    position: absolute;
+    bottom: 183px;
+    left: 260px;
+  }
+
+  // =========================
+  // Gora
+  // =========================
+  #gora1 {
+    position: absolute;
+    top: 100px;
+    left: 280px;
+  }
+
+  #gora2 {
+    position: absolute;
+    bottom: 340px;
+    left: 460px;
+  }
+
+  #gora3 {
+    position: absolute;
+    bottom: 255px;
+    left: 315px;
+  }
+
+  // =========================
+  // Left Vists
+  // =========================
+  #leftVists1 {
+    position: absolute;
+    top: 100px;
+    left: 95px;
+  }
+
+  #leftVists2 {
+    position: absolute;
+    bottom: 160px;
+    left: 625px;
+  }
+
+  #leftVists3 {
+    position: absolute;
+    bottom: 105px;
+    left: 165px;
+  }
+
+  // =========================
+  // Right Vists
+  // =========================
+  #rightVists1 {
+    position: absolute;
+    top: 400px;
+    left: 95px;
+  }
+
+  #rightVists2 {
+    position: absolute;
+    top: 325px;
+    left: 625px;
+  }
+
+  #rightVists3 {
+    position: absolute;
+    bottom: 105px;
+    left: 410px;
+  }
+
+  // =========================
+  // Final Vists
+  // =========================
+  #leftFinalVists1 {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+  }
+
+  #rightFinalVists1 {
+    position: absolute;
+    top: 460px;
+    left: 70px;
+  }
+
+  #leftFinalVists2 {
+    position: absolute;
+    top: 460px;
+    left: 602px;
+  }
+
+  #rightFinalVists2 {
+    position: absolute;
+    top: 150px;
+    left: 602px;
+  }
+
+  #leftFinalVists3 {
+    position: absolute;
+    top: 610px;
+    left: 235px;
+  }
+
+  #rightFinalVists3 {
+    position: absolute;
+    top: 610px;
+    left: 480px;
+  }
+
+  // =========================
+  // Totals
+  // =========================
+  #total1 {
+    position: absolute;
+    top: 275px;
+    left: 275px;
+  }
+
+  #total2 {
+    position: absolute;
+    top: 275px;
+    left: 435px;
+  }
+
+  #total3 {
+    position: absolute;
+    top: 435px;
+    left: 360px;
+  }
+
+  // =========================
+  // Result states
+  // =========================
+  .green-zone,
+  .red-zone {
+    background-color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .red-zone {
+    color: red;
+    border: 5px solid red;
+  }
+
+  .green-zone {
+    color: greenyellow;
+    border: 5px solid greenyellow;
+  }
+
+  // =========================
+  // Buttons
+  // =========================
+  .btn-section {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    max-width: 754px;
+
+    .btn-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+// =========================
+// Number inputs
+// =========================
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,162 @@
+<div class="container">
+  <h1 class="title">Sochi Bullet Calculation</h1>
+
+  <img ngSrc="assets/bullet.png" priority="true" height="756" width="754" alt="bullet" />
+
+  <!-- ==================== -->
+  <!-- Bullet -->
+  <!-- ==================== -->
+  <input
+    id="bullet1"
+    type="number"
+    [formField]="bulletForm.bullet1"
+    aria-label="Bullet player 1"
+  >
+  <input
+    id="bullet2"
+    type="number"
+    [formField]="bulletForm.bullet2"
+    aria-label="Bullet player 2"
+  >
+  <input
+    id="bullet3"
+    type="number"
+    [formField]="bulletForm.bullet3"
+    aria-label="Bullet player 3"
+  >
+
+  <!-- ==================== -->
+  <!-- Gora -->
+  <!-- ==================== -->
+  <input
+    id="gora1"
+    type="number"
+    [formField]="bulletForm.gora1"
+    aria-label="Gora player 1"
+  >
+  <input
+    id="gora2"
+    type="number"
+    [formField]="bulletForm.gora2"
+    aria-label="Gora player 2"
+  >
+  <input
+    id="gora3"
+    type="number"
+    [formField]="bulletForm.gora3"
+    aria-label="Gora player 3"
+  >
+
+  <!-- ==================== -->
+  <!-- Left Vists -->
+  <!-- ==================== -->
+  <input
+    id="leftVists1"
+    type="number"
+    [formField]="bulletForm.leftVists1"
+    aria-label="Left vists player 1"
+  >
+  <input
+    id="leftVists2"
+    type="number"
+    [formField]="bulletForm.leftVists2"
+    aria-label="Left vists player 2"
+  >
+  <input
+    id="leftVists3"
+    type="number"
+    [formField]="bulletForm.leftVists3"
+    aria-label="Left vists player 3"
+  >
+
+  <!-- ==================== -->
+  <!-- Right Vists -->
+  <!-- ==================== -->
+  <input
+    id="rightVists1"
+    type="number"
+    [formField]="bulletForm.rightVists1"
+    aria-label="Right vists player 1"
+  >
+  <input
+    id="rightVists2"
+    type="number"
+    [formField]="bulletForm.rightVists2"
+    aria-label="Right vists player 2"
+  >
+  <input
+    id="rightVists3"
+    type="number"
+    [formField]="bulletForm.rightVists3"
+    aria-label="Right vists player 3"
+  >
+
+  <!-- ==================== -->
+  <!-- Final Results -->
+  <!-- ==================== -->
+  @if (inProcess()) {
+    <section id="final-results" aria-label="Final results">
+      <div id="leftFinalVists1" [ngClass]="calculationObj.leftFinalVists1 < 0 ? 'red-zone' : 'green-zone'">
+        <p>Final vists:</p>
+        <p class="text-center">{{ calculationObj.leftFinalVists1 }}</p>
+      </div>
+
+      <div id="rightFinalVists1" [ngClass]="calculationObj.rightFinalVists1 < 0 ? 'red-zone' : 'green-zone'">
+        <p>Final vists:</p>
+        <p class="text-center">{{ calculationObj.rightFinalVists1 }}</p>
+      </div>
+
+      <div id="leftFinalVists2" [ngClass]="calculationObj.leftFinalVists2 < 0 ? 'red-zone' : 'green-zone'">
+        <p>Final vists:</p>
+        <p class="text-center">{{ calculationObj.leftFinalVists2 }}</p>
+      </div>
+
+      <div id="rightFinalVists2" [ngClass]="calculationObj.rightFinalVists2 < 0 ? 'red-zone' : 'green-zone'">
+        <p>Final vists:</p>
+        <p class="text-center">{{ calculationObj.rightFinalVists2 }}</p>
+      </div>
+
+      <div id="leftFinalVists3" [ngClass]="calculationObj.leftFinalVists3 < 0 ? 'red-zone' : 'green-zone'">
+        <p>Final vists:</p>
+        <p class="text-center">{{ calculationObj.leftFinalVists3 }}</p>
+      </div>
+
+      <div id="rightFinalVists3" [ngClass]="calculationObj.rightFinalVists3 < 0 ? 'red-zone' : 'green-zone'">
+        <p>Final vists:</p>
+        <p class="text-center">{{ calculationObj.rightFinalVists3 }}</p>
+      </div>
+
+      <div id="total1"
+           [ngClass]="calculationObj.total1 < 0 ? 'red-zone' : 'green-zone'">
+        <p class="text-center">{{ calculationObj.total1 }}</p>
+      </div>
+
+      <div id="total2"
+           [ngClass]="calculationObj.total2 < 0 ? 'red-zone' : 'green-zone'">
+        <p class="text-center">{{ calculationObj.total2 }}</p>
+      </div>
+
+      <div id="total3"
+           [ngClass]="calculationObj.total3 < 0 ? 'red-zone' : 'green-zone'">
+        <p class="text-center">{{ calculationObj.total3 }}</p>
+      </div>
+    </section>
+  }
+
+  <!-- ==================== -->
+  <!-- Buttons -->
+  <!-- ==================== -->
+  <section class="btn-section">
+    <div class="btn-wrapper">
+      <button id="calculate" type="button" class="btn btn-dark" (click)="calculate()">
+        Calculate
+      </button>
+      <button id="reset" type="button" class="btn btn-dark" (click)="reset()">
+        Reset
+      </button>
+    </div>
+  </section>
+
+</div>
+
+<br />
