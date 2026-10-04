@@ -1,9 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { BulletCalculation } from './bullet-calculation/bullet-calculation/bullet-calculation';
 
 @Component({
-  imports: [RouterOutlet, BulletCalculation],
+  imports: [BulletCalculation],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
