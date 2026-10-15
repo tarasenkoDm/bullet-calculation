@@ -2,7 +2,7 @@
   position: relative;
 
   input {
-    width: 50px
+    //width: 50px
   }
 
   .title {
@@ -17,156 +17,11 @@
   }
 
   // =========================
-  // Bullet
-  // =========================
-  #bullet1 {
-    position: absolute;
-    top: 100px;
-    left: 185px;
-  }
-
-  #bullet2 {
-    position: absolute;
-    bottom: 265px;
-    left: 545px;
-  }
-
-  #bullet3 {
-    position: absolute;
-    bottom: 183px;
-    left: 260px;
-  }
-
-  // =========================
-  // Gora
-  // =========================
-  #gora1 {
-    position: absolute;
-    top: 100px;
-    left: 280px;
-  }
-
-  #gora2 {
-    position: absolute;
-    bottom: 340px;
-    left: 460px;
-  }
-
-  #gora3 {
-    position: absolute;
-    bottom: 255px;
-    left: 315px;
-  }
-
-  // =========================
-  // Left Vists
-  // =========================
-  #leftVists1 {
-    position: absolute;
-    top: 100px;
-    left: 95px;
-  }
-
-  #leftVists2 {
-    position: absolute;
-    bottom: 160px;
-    left: 625px;
-  }
-
-  #leftVists3 {
-    position: absolute;
-    bottom: 105px;
-    left: 165px;
-  }
-
-  // =========================
-  // Right Vists
-  // =========================
-  #rightVists1 {
-    position: absolute;
-    top: 400px;
-    left: 95px;
-  }
-
-  #rightVists2 {
-    position: absolute;
-    top: 325px;
-    left: 625px;
-  }
-
-  #rightVists3 {
-    position: absolute;
-    bottom: 105px;
-    left: 410px;
-  }
-
-  // =========================
-  // Final Vists
-  // =========================
-  #leftFinalVists1 {
-    position: absolute;
-    top: 150px;
-    left: 70px;
-  }
-
-  #rightFinalVists1 {
-    position: absolute;
-    top: 460px;
-    left: 70px;
-  }
-
-  #leftFinalVists2 {
-    position: absolute;
-    top: 460px;
-    left: 602px;
-  }
-
-  #rightFinalVists2 {
-    position: absolute;
-    top: 150px;
-    left: 602px;
-  }
-
-  #leftFinalVists3 {
-    position: absolute;
-    top: 610px;
-    left: 235px;
-  }
-
-  #rightFinalVists3 {
-    position: absolute;
-    top: 610px;
-    left: 480px;
-  }
-
-  // =========================
-  // Totals
-  // =========================
-  #total1 {
-    position: absolute;
-    top: 275px;
-    left: 275px;
-  }
-
-  #total2 {
-    position: absolute;
-    top: 275px;
-    left: 435px;
-  }
-
-  #total3 {
-    position: absolute;
-    top: 435px;
-    left: 360px;
-  }
-
-  // =========================
   // Result states
   // =========================
   .green-zone,
   .red-zone {
     background-color: black;
-    font-size: 16px;
     font-weight: bold;
     padding: 5px;
   }
@@ -181,21 +36,697 @@
     border: 5px solid greenyellow;
   }
 
-  // =========================
-  // Buttons
-  // =========================
-  .btn-section {
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
-    max-width: 754px;
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
 
-    .btn-wrapper {
-      position: relative;
-      display: flex;
-      justify-content: space-evenly;
+    font-size: 14px;
+
+    input {
+      width: 30px;
+    }
+
+    .title {
+      width: 516px;
+    }
+
+    // =========================
+    // Bullet
+    // =========================
+    #bullet1 {
+      position: absolute;
+      top: 73px;
+      left: 133px;
+    }
+
+    #bullet2 {
+      position: absolute;
+      bottom: 170px;
+      left: 401px;
+    }
+
+    #bullet3 {
+      position: absolute;
+      bottom: 131px;
+      left: 179px;
+    }
+
+    // =========================
+    // Gora
+    // =========================
+    #gora1 {
+      position: absolute;
+      top: 73px;
+      left: 195px;
+    }
+
+    #gora2 {
+      position: absolute;
+      bottom: 222px;
+      left: 342px;
+    }
+
+    #gora3 {
+      position: absolute;
+      bottom: 180px;
+      left: 221px;
+    }
+
+    // =========================
+    // Left Vists
+    // =========================
+    #leftVists1 {
+      position: absolute;
+      top: 73px;
+      left: 76px;
+    }
+
+    #leftVists2 {
+      position: absolute;
+      bottom: 115px;
+      left: 452px;
+    }
+
+    #leftVists3 {
+      position: absolute;
+      bottom: 79px;
+      left: 121px;
+    }
+
+    // =========================
+    // Right Vists
+    // =========================
+    #rightVists1 {
+      position: absolute;
+      top: 284px;
+      left: 76px;
+    }
+
+    #rightVists2 {
+      position: absolute;
+      top: 236px;
+      left: 452px;
+    }
+
+    #rightVists3 {
+      position: absolute;
+      bottom: 79px;
+      left: 296px;
+    }
+
+    // =========================
+    // Final Vists
+    // =========================
+    #leftFinalVists1 {
+      position: absolute;
+      top: 104px;
+      left: 74px;
+    }
+
+    #rightFinalVists1 {
+      position: absolute;
+      top: 310px;
+      left: 74px;
+    }
+
+    #leftFinalVists2 {
+      position: absolute;
+      top: 285px;
+      left: 395px;
+    }
+
+    #rightFinalVists2 {
+      position: absolute;
+      top: 104px;
+      left: 395px;
+    }
+
+    #leftFinalVists3 {
+      position: absolute;
+      top: 431px;
+      left: 156px;
+    }
+
+    #rightFinalVists3 {
+      position: absolute;
+      top: 431px;
+      left: 335px;
+    }
+
+    // =========================
+    // Totals
+    // =========================
+    #total1 {
+      position: absolute;
+      top: 194px;
+      left: 213px;
+    }
+
+    #total2 {
+      position: absolute;
+      top: 194px;
+      left: 317px;
+    }
+
+    #total3 {
+      position: absolute;
+      top: 314px;
+      left: 263px;
+    }
+
+    // =========================
+    // Buttons
+    // =========================
+    .btn-section {
+      position: absolute;
+      bottom: 6px;
+      width: 100%;
+      max-width: 516px;
+
+      .btn-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+
+        #calculate, #reset {
+          font-size: 14px;
+        }
+      }
     }
   }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+    input {
+      width: 40px;
+      font-size: 14px;
+    }
+
+    .title {
+      width: 516px;
+    }
+
+    // =========================
+    // Bullet
+    // =========================
+    #bullet1 {
+      position: absolute;
+      top: 71px;
+      left: 125px;
+    }
+
+    #bullet2 {
+      position: absolute;
+      bottom: 166px;
+      left: 373px;
+    }
+
+    #bullet3 {
+      position: absolute;
+      bottom: 119px;
+      left: 169px;
+    }
+
+    // =========================
+    // Gora
+    // =========================
+    #gora1 {
+      position: absolute;
+      top: 71px;
+      left: 186px;
+    }
+
+    #gora2 {
+      position: absolute;
+      bottom: 227px;
+      left: 315px;
+    }
+
+    #gora3 {
+      position: absolute;
+      bottom: 171px;
+      left: 215px;
+    }
+
+    // =========================
+    // Left Vists
+    // =========================
+    #leftVists1 {
+      position: absolute;
+      top: 71px;
+      left: 67px;
+    }
+
+    #leftVists2 {
+      position: absolute;
+      bottom: 105px;
+      left: 430px;
+    }
+
+    #leftVists3 {
+      position: absolute;
+      bottom: 72px;
+      left: 117px;
+    }
+
+    // =========================
+    // Right Vists
+    // =========================
+    #rightVists1 {
+      position: absolute;
+      top: 273px;
+      left: 67px;
+    }
+
+    #rightVists2 {
+      position: absolute;
+      top: 222px;
+      left: 430px;
+    }
+
+    #rightVists3 {
+      position: absolute;
+      bottom: 72px;
+      left: 281px;
+    }
+
+    // =========================
+    // Final Vists
+    // =========================
+    #leftFinalVists1 {
+      position: absolute;
+      top: 109px;
+      left: 65px;
+    }
+
+    #rightFinalVists1 {
+      position: absolute;
+      top: 301px;
+      left: 65px;
+    }
+
+    #leftFinalVists2 {
+      position: absolute;
+      top: 301px;
+      left: 404px;
+    }
+
+    #rightFinalVists2 {
+      position: absolute;
+      top: 109px;
+      left: 404px;
+    }
+
+    #leftFinalVists3 {
+      position: absolute;
+      top: 405px;
+      left: 159px;
+    }
+
+    #rightFinalVists3 {
+      position: absolute;
+      top: 405px;
+      left: 321px;
+    }
+
+    // =========================
+    // Totals
+    // =========================
+    #total1 {
+      position: absolute;
+      top: 165px;
+      left: 202px;
+    }
+
+    #total2 {
+      position: absolute;
+      top: 165px;
+      left: 295px;
+    }
+
+    #total3 {
+      position: absolute;
+      top: 299px;
+      left: 248px;
+    }
+
+    // =========================
+    // Buttons
+    // =========================
+    .btn-section {
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      max-width: 516px;
+
+      .btn-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      #calculate, #reset {
+        font-size: 12px;
+      }
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+
+    .title {
+      width: 696px;
+    }
+
+    // =========================
+    // Bullet
+    // =========================
+    #bullet1 {
+      position: absolute;
+      top: 100px;
+      left: 167px;
+    }
+
+    #bullet2 {
+      position: absolute;
+      bottom: 239px;
+      left: 500px;
+    }
+
+    #bullet3 {
+      position: absolute;
+      bottom: 172px;
+      left: 233px;
+    }
+
+    // =========================
+    // Gora
+    // =========================
+    #gora1 {
+      position: absolute;
+      top: 100px;
+      left: 250px;
+    }
+
+    #gora2 {
+      position: absolute;
+      bottom: 307px;
+      left: 421px;
+    }
+
+    #gora3 {
+      position: absolute;
+      bottom: 233px;
+      left: 281px;
+    }
+
+    // =========================
+    // Left Vists
+    // =========================
+    #leftVists1 {
+      position: absolute;
+      top: 100px;
+      left: 88px;
+    }
+
+    #leftVists2 {
+      position: absolute;
+      bottom: 160px;
+      left: 575px;
+    }
+
+    #leftVists3 {
+      position: absolute;
+      bottom: 99px;
+      left: 157px;
+    }
+
+    // =========================
+    // Right Vists
+    // =========================
+    #rightVists1 {
+      position: absolute;
+      top: 377px;
+      left: 88px;
+    }
+
+    #rightVists2 {
+      position: absolute;
+      top: 310px;
+      left: 575px;
+    }
+
+    #rightVists3 {
+      position: absolute;
+      bottom: 99px;
+      left: 379px;
+    }
+
+    // =========================
+    // Final Vists
+    // =========================
+    #leftFinalVists1 {
+      position: absolute;
+      top: 150px;
+      left: 100px;
+    }
+
+    #rightFinalVists1 {
+      position: absolute;
+      top: 412px;
+      left: 100px;
+    }
+
+    #leftFinalVists2 {
+      position: absolute;
+      top: 360px;
+      left: 513px;
+    }
+
+    #rightFinalVists2 {
+      position: absolute;
+      top: 150px;
+      left: 513px;
+    }
+
+    #leftFinalVists3 {
+      position: absolute;
+      top: 562px;
+      left: 208px;
+    }
+
+    #rightFinalVists3 {
+      position: absolute;
+      top: 562px;
+      left: 430px;
+    }
+
+    // =========================
+    // Totals
+    // =========================
+    #total1 {
+      position: absolute;
+      top: 256px;
+      left: 263px;
+    }
+
+    #total2 {
+      position: absolute;
+      top: 256px;
+      left: 405px;
+    }
+
+    #total3 {
+      position: absolute;
+      top: 402px;
+      left: 334px;
+    }
+
+    // =========================
+    // Buttons
+    // =========================
+    .btn-section {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      max-width: 696px;
+
+      .btn-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+    .title {
+      width: 754px;
+    }
+
+    // =========================
+    // Bullet
+    // =========================
+    #bullet1 {
+      position: absolute;
+      top: 100px;
+      left: 185px;
+    }
+
+    #bullet2 {
+      position: absolute;
+      bottom: 265px;
+      left: 545px;
+    }
+
+    #bullet3 {
+      position: absolute;
+      bottom: 183px;
+      left: 260px;
+    }
+
+    // =========================
+    // Gora
+    // =========================
+    #gora1 {
+      position: absolute;
+      top: 100px;
+      left: 280px;
+    }
+
+    #gora2 {
+      position: absolute;
+      bottom: 340px;
+      left: 460px;
+    }
+
+    #gora3 {
+      position: absolute;
+      bottom: 255px;
+      left: 315px;
+    }
+
+    // =========================
+    // Left Vists
+    // =========================
+    #leftVists1 {
+      position: absolute;
+      top: 100px;
+      left: 95px;
+    }
+
+    #leftVists2 {
+      position: absolute;
+      bottom: 160px;
+      left: 625px;
+    }
+
+    #leftVists3 {
+      position: absolute;
+      bottom: 105px;
+      left: 165px;
+    }
+
+    // =========================
+    // Right Vists
+    // =========================
+    #rightVists1 {
+      position: absolute;
+      top: 400px;
+      left: 95px;
+    }
+
+    #rightVists2 {
+      position: absolute;
+      top: 325px;
+      left: 625px;
+    }
+
+    #rightVists3 {
+      position: absolute;
+      bottom: 105px;
+      left: 410px;
+    }
+
+    // =========================
+    // Final Vists
+    // =========================
+    #leftFinalVists1 {
+      position: absolute;
+      top: 150px;
+      left: 70px;
+    }
+
+    #rightFinalVists1 {
+      position: absolute;
+      top: 460px;
+      left: 70px;
+    }
+
+    #leftFinalVists2 {
+      position: absolute;
+      top: 460px;
+      left: 602px;
+    }
+
+    #rightFinalVists2 {
+      position: absolute;
+      top: 150px;
+      left: 602px;
+    }
+
+    #leftFinalVists3 {
+      position: absolute;
+      top: 610px;
+      left: 235px;
+    }
+
+    #rightFinalVists3 {
+      position: absolute;
+      top: 610px;
+      left: 480px;
+    }
+
+    // =========================
+    // Totals
+    // =========================
+    #total1 {
+      position: absolute;
+      top: 275px;
+      left: 292px;
+    }
+
+    #total2 {
+      position: absolute;
+      top: 275px;
+      left: 435px;
+    }
+
+    #total3 {
+      position: absolute;
+      top: 435px;
+      left: 364px;
+    }
+
+    // =========================
+    // Buttons
+    // =========================
+    .btn-section {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      max-width: 754px;
+
+      .btn-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
 }
 
 // =========================
