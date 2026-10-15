@@ -394,6 +394,10 @@
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
 
+    input {
+      font-size: 18px;
+    }
+
     .title {
       width: 696px;
     }
@@ -409,8 +413,8 @@
 
     #bullet2 {
       position: absolute;
-      bottom: 239px;
-      left: 500px;
+      bottom: 222px;
+      left: 504px;
     }
 
     #bullet3 {
@@ -485,39 +489,43 @@
     // =========================
     // Final Vists
     // =========================
+    #final-results {
+      font-size: 18px;
+    }
+
     #leftFinalVists1 {
       position: absolute;
       top: 150px;
-      left: 100px;
+      left: 95px;
     }
 
     #rightFinalVists1 {
       position: absolute;
       top: 412px;
-      left: 100px;
+      left: 95px;
     }
 
     #leftFinalVists2 {
       position: absolute;
-      top: 360px;
-      left: 513px;
+      top: 374px;
+      left: 508px;
     }
 
     #rightFinalVists2 {
       position: absolute;
       top: 150px;
-      left: 513px;
+      left: 508px;
     }
 
     #leftFinalVists3 {
       position: absolute;
-      top: 562px;
+      top: 558px;
       left: 208px;
     }
 
     #rightFinalVists3 {
       position: absolute;
-      top: 562px;
+      top: 558px;
       left: 430px;
     }
 
@@ -547,7 +555,7 @@
     // =========================
     .btn-section {
       position: absolute;
-      bottom: 15px;
+      bottom: 10px;
       width: 100%;
       max-width: 696px;
 
@@ -555,6 +563,10 @@
         position: relative;
         display: flex;
         justify-content: space-evenly;
+      }
+
+      #calculate, #reset {
+        font-size: 18px;
       }
     }
   }
